@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ping</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/Ping.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Cookie&family=Great+Vibes&family=Lobster&family=Orelega+One&family=Tangerine&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img
+              src="https://images.emojiterra.com/twitter/v12/512px/1f1fa.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            URL DETECTOR
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavBar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/whois" class="nav-link">WHOIS</a>
+              </li>
+              <li class="nav-item">
+                <a href="/urled" class="nav-link"
+                  >URL ENCODER DECODER</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a href="/ping" class="nav-link">PING</a>
+              </li>
+              <li class="nav-item">
+                <a href="/his" class="nav-link">HISTORY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="jumbotron" style="height: auto !important">
+    <div class="page-header">
+      <h1>PING</h1>
+    </div>
+    <form class="form" role="form" action="/lookup" method="post">
+      <div class="form-group" style="max-width: 600px">
+        <input
+          type="text"
+          class="form-control"
+          name="p"
+          id="p"
+          placeholder="Enter domain"
+        /> <br>
+        <a href="/lookup">
+        <button type="submit" name="go" class="btn btn-lg btn-primary ">
+          Ping
+        </button>
+        </a>
+      </div>
+
+    </form>
+
+    </div>
+    </div>
+  </body>
+</html>
